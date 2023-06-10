@@ -4,12 +4,25 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: url('https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/09/Sauron-and-Aragorn-Header.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
-  .player-column {
+  .player {
     width: 1000px;
     text-align: center;
-    height: 600px;
+    height: 800px;
+  }
+
+  #player-1 {
+    background-color: green;
+    opacity: 50%
+ }
+
+  #player-2 {
+    background-color: maroon;
+    opacity: 50%
   }
   
   .board {
