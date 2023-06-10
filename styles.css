@@ -7,36 +7,68 @@ body {
     background-image: url('https://static1.cbrimages.com/wordpress/wp-content/uploads/2021/09/Sauron-and-Aragorn-Header.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0;
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  h1 {
+    padding-bottom: 200px;
+    color: goldenrod;
+    opacity: 1;
+  }
+  
+  h2 {
+    color: goldenrod;
+    font-family: 'Trebuchet MS';
+    font-size: 50px;
+    margin: 0;
+    opacity: 1;
+
+  }
+
+  .box-container {
+    border: 1px solid #ccc; /* border styles */
+    padding: 10px; /* padding around the box */
+    width: max-content; /* adjust the width as needed */
+    display: inline-block; /* display as inline block to wrap content */
+    height: fit-content;
+    background-color: black;
+    opacity: 1;
   }
   
   .player {
-    width: 1000px;
+    width: 100%;
     text-align: center;
-    height: 800px;
+    height: 100%;
   }
 
   #player-1 {
     background-color: green;
-    opacity: 50%
+    opacity: 0.25;
  }
 
   #player-2 {
     background-color: maroon;
-    opacity: 50%
+    opacity: 0.25;
   }
   
   .board {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
-    background-color: #f2f2f2;
-    padding: 20px;
+    opacity: 0.9;
   }
   
   .cell {
     width: 100px;
     height: 100px;
-    background-color: white;
+    background-color: black;
     border: 1px solid #ccc;
   }
   
