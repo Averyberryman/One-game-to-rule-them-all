@@ -38,6 +38,7 @@ body {
     height: fit-content;
     background-color: rgba(0, 0, 0, 1);
     box-shadow: inset;
+    border-radius: 20px;
   }
 
 
@@ -59,6 +60,7 @@ body {
   p {
     color: goldenrod;
     font-size: 30px;
+    margin-top: 0px;
   }
   
   .board {
@@ -73,6 +75,7 @@ body {
     height: 80px;
     background-color: black;
     border: 1px solid #ccc;
+    border-radius: 20px;
   }
   
   .winner-prompt {
