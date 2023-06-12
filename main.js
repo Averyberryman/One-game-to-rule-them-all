@@ -35,6 +35,16 @@ function makeGameBoard() {
   };
 }
 
+function resetBoard() {
+    setTimeout(function() {
+      gameBoard = makeGameBoard();
+      updateDisplay();
+      currentPlayer = (currentPlayer === player1) ? player2 : player1;
+      playerTurn.textContent = "It's " + currentPlayer.token + "'s Turn!";
+    }, 5000);
+  }
+  
+
 function checkWins(player) {
   var winningNumbers = [
     [0, 1, 2], [3, 4, 5], [6, 7, 8],
@@ -76,6 +86,7 @@ function increaseWins(player) {
 function changeTurn() {
   currentPlayer = (currentPlayer === player1) ? player2 : player1;
   updateDisplay();
+
 }
 
 function updateDisplay() {
@@ -99,10 +110,14 @@ for (var i = 0; i < square.length; i++) {
 
       if (checkWins(currentPlayer)) {
           increaseWins(currentPlayer);
+          resetBoard();
       } else if (checkDraws()) {
+        playerTurn.textContent = "It's a draw!";
+        resetBoard();
       } else {
         changeTurn();
       }
     }
   });
 }
+
