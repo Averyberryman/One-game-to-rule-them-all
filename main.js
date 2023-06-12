@@ -41,7 +41,7 @@ function resetBoard() {
       updateDisplay();
       currentPlayer = (currentPlayer === player1) ? player2 : player1;
       playerTurn.textContent = "It's " + currentPlayer.token + "'s Turn!";
-    }, 5000);
+    }, 3000);
   }
   
 
