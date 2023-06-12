@@ -1,6 +1,6 @@
 // Variables
 var player1 = createPlayer(1, '🗡');
-var player2 = createPlayer(2, '👁');
+var player2 = createPlayer(2, '💍');
 var currentPlayer = player1;
 var gameBoard = makeGameBoard();
 var player1Wins = document.querySelector("#player-1-wins");
