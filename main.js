@@ -40,7 +40,7 @@ function resetBoard() {
       gameBoard = makeGameBoard();
       updateDisplay();
       currentPlayer = (currentPlayer === player1) ? player2 : player1;
-      playerTurn.textContent = "It's " + currentPlayer.token + "'s Turn!";
+      playerTurn.textContent = `It's ${currentPlayer.token}'s Turn!`;;
     }, 3000);
   }
   
@@ -92,7 +92,7 @@ function changeTurn() {
 function updateDisplay() {
   player1Wins.textContent = player1.wins;
   player2Wins.textContent = player2.wins;
-  playerTurn.textContent = "It's " + currentPlayer.token + "'s Turn!";
+  playerTurn.textContent = `It's ${currentPlayer.token}'s Turn!`;
   for (var i = 0; i < square.length; i++) {
     square[i].textContent = gameBoard.findSquare(Math.floor(i / 3), i % 3);
   }
