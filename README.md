@@ -1,4 +1,6 @@
-# final_solo_project
+# The One Game to Rule Them All
+
+Project Link: https://averyberryman.github.io/One-game-to-rule-them-all/
 
 ## Abstract:
 The Tic Tac Toe app is a web-based application that allows users to share a local machine to play tic-tac-toe against one another. Users' wins are tallied based on which character they are using, and functionality ensures that no player ever has the first turn in consecutive games, regardless of outcome!
